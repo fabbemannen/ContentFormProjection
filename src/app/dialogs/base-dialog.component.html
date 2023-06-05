@@ -3,10 +3,10 @@
   <h4>Content between this...</h4>
   <ng-content style="height: inherit;"></ng-content>
   <h4>...and this is content projection.</h4>
-  <div mat-dialog-actions>
+  <div mat-dialog-actions align="end">
     <button mat-button color="primary" mat-dialog-close>Cancel</button>
 
     <!-- Does not currently go back to previous result -->
-    <button mat-button color="primary" [mat-dialog-close]="data">Ok</button>
+    <button mat-flat-button color="primary" [mat-dialog-close]="data">Ok</button>
   </div>
 </div>

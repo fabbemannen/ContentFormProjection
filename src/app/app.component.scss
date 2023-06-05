@@ -1,0 +1,11 @@
+button {
+  margin: 8px 3%;
+}
+
+:host>div {
+  border-radius: 10px;
+  border: 3px purple solid;
+  padding: 10px;
+  margin: 8px 3%;
+  max-width: 450px;
+}
