@@ -1,5 +1,14 @@
-<button mat-raised-button color="primary" (click)="openUserDialog()" style="margin: 8px 3%;">Click me!</button>
+<button mat-raised-button color="primary" (click)="openUserDialog()" style="margin: 8px 3%;">Click me (template driven
+  form)</button>
 <div style="border-radius: 10px; border: 3px purple solid; padding: 10px; margin: 8px 3%;">
   <div>Form returned: {{userData.lastName}}<span *ngIf="userData.lastName.length > 0 && userData.firstName.length > 0">,
     </span>{{userData.firstName}}</div>
+</div>
+
+<button mat-raised-button color="primary" (click)="openReactiveDialog()" style="margin: 8px 3%;">Click me (reactive
+  form)</button>
+<div style="border-radius: 10px; border: 3px purple solid; padding: 10px; margin: 8px 3%;">
+  <div>Form returned: {{reactiveData.lastName}}<span
+      *ngIf="reactiveData.lastName.length > 0 && reactiveData.firstName.length > 0">,
+    </span>{{reactiveData.firstName}}</div>
 </div>
